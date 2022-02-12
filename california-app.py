@@ -18,14 +18,14 @@ st.dataframe(data=cal)
 st.sidebar.header('Specify Input Parameters')
 
 def user_input_features():
-    Longitude = st.sidebar.slider('Longitude', x.Longitude.min(), x.Longitude.max(), x.Longitude.mean())
-    Latitude = st.sidebar.slider('Latitude', x.Latitude.min(), x.Latitude.max(), x.Latitude.mean())
-    MedInc = st.sidebar.slider('MedInc', x.MedInc.min(), x.MedInc.max(), x.MedInc.mean())
-    HouseAge = st.sidebar.slider('HouseAge', x.HouseAge.min(), x.HouseAge.max(), x.HouseAge.mean())
-    AveRooms = st.sidebar.slider('AveRooms', x.AveRooms.min(), x.AveRooms.max(), x.AveRooms.mean())
-    AveBedrms = st.sidebar.slider('AveBedrms', x.AveBedrms.min(), x.AveBedrms.max(), x.AveBedrms.mean())
-    Population = st.sidebar.slider('Population', x.Population.min(), x.Population.max(), x.Population.mean())
-    AveOccup = st.sidebar.slider('AveOccup', x.AveOccup.min(), x.AveOccup.max(), x.AveOccup.mean())
+    Longitude = st.sidebar.slider('Longitude', x.Longitude.min(), x.Longitude.max(), float(x.Longitude.mean()))
+    Latitude = st.sidebar.slider('Latitude', x.Latitude.min(), x.Latitude.max(), float(x.Latitude.mean()))
+    MedInc = st.sidebar.slider('MedInc', x.MedInc.min(), x.MedInc.max(), float(x.MedInc.mean()))
+    HouseAge = st.sidebar.slider('HouseAge', x.HouseAge.min(), x.HouseAge.max(), float(x.HouseAge.mean()))
+    AveRooms = st.sidebar.slider('AveRooms', x.AveRooms.min(), x.AveRooms.max(), float(x.AveRooms.mean()))
+    AveBedrms = st.sidebar.slider('AveBedrms', x.AveBedrms.min(), x.AveBedrms.max(), float(x.AveBedrms.mean()))
+    Population = st.sidebar.slider('Population', x.Population.min(), x.Population.max(), float(x.Population.mean()))
+    AveOccup = st.sidebar.slider('AveOccup', x.AveOccup.min(), x.AveOccup.max(), float(x.AveOccup.mean()))
 
     data = {'Longitude': Longitude,
             'Latitude': Latitude,
